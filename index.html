@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ID Cricket Online – Get Instant Cricket Betting ID & Live Casino Access</title>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Exo+2:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #060b14;
+    --bg2: #0b1220;
+    --bg3: #0f1a2e;
+    --accent: #00e676;
+    --accent2: #ffab00;
+    --accent3: #e53935;
+    --text: #e8eaf6;
+    --muted: #7986cb;
+    --card: #111d35;
+    --border: rgba(0,230,118,0.15);
+    --gold: #ffd700;
+    --live: #ff1744;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    font-family: 'Exo 2', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+  }
+
+  /* HEADER */
+  header {
+    background: linear-gradient(135deg, #060b14 0%, #0a1628 100%);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+  }
+
+  .header-inner {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+
+  .logo-icon {
+    width: 42px;
+    height: 42px;
+    background: linear-gradient(135deg, var(--accent), #00bfa5);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+  }
+
+  .logo-text {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.1;
+  }
+
+  .logo-text span { color: var(--accent); }
+
+  nav { display: flex; gap: 28px; align-items: center; }
+
+  nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+  }
+
+  nav a:hover { color: var(--accent); }
+
+  .btn-wa {
+    background: linear-gradient(135deg, #25d366, #128c7e);
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 15px rgba(37,211,102,0.3);
+  }
+
+  .btn-wa:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(37,211,102,0.4); }
+
+  /* HERO BANNER */
+  .hero {
+    background: linear-gradient(135deg, #060b14 0%, #0d1f3c 50%, #060b14 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -100px; left: -100px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(0,230,118,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -100px; right: -100px;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(255,171,0,0.07) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0,230,118,0.1);
+    border: 1px solid rgba(0,230,118,0.3);
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+  }
+
+  .hero h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: clamp(36px, 6vw, 72px);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+
+  .hero h1 span { color: var(--accent); }
+
+  .hero p {
+    font-size: 18px;
+    color: #aab4c8;
+    max-width: 600px;
+    margin: 0 auto 36px;
+    line-height: 1.7;
+  }
+
+  .hero-ctas { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+  .btn-primary {
+    background: linear-gradient(135deg, var(--accent), #00bfa5);
+    color: #000;
+    padding: 16px 36px;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s;
+    box-shadow: 0 6px 25px rgba(0,230,118,0.35);
+  }
+
+  .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 35px rgba(0,230,118,0.5); }
+
+  .btn-outline {
+    background: transparent;
+    color: var(--text);
+    padding: 16px 36px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.2);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s;
+  }
+
+  .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+
+  .hero-stats {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+  }
+
+  .stat-box {
+    text-align: center;
+  }
+
+  .stat-box .num {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1;
+  }
+
+  .stat-box .label {
+    font-size: 13px;
+    color: #7986cb;
+    margin-top: 4px;
+  }
+
+  /* BANNER SLIDER */
+  .banners {
+    background: var(--bg2);
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  .banner-track {
+    display: flex;
+    gap: 16px;
+    animation: slide 30s linear infinite;
+    width: max-content;
+  }
+
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .banner-item {
+    border-radius: 12px;
+    overflow: hidden;
+    flex-shrink: 0;
+    width: 340px;
+    height: 120px;
+    position: relative;
+  }
+
+  .banner-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .banner-item .overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+  }
+
+  /* SECTION HEADERS */
+  .section { padding: 60px 20px; max-width: 1300px; margin: 0 auto; }
+  
+  .section-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .section-title span { color: var(--accent); }
+
+  .section-sub {
+    text-align: center;
+    color: #7986cb;
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  .divider {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    margin: 12px auto 36px;
+    border-radius: 2px;
+  }
+
+  /* GAMES GRID */
+  .games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 12px;
+  }
+
+  .game-card {
+    background: var(--card);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.25s;
+    position: relative;
+  }
+
+  .game-card:hover { transform: translateY(-4px); border-color: var(--accent); box-shadow: 0 8px 25px rgba(0,230,118,0.2); }
+
+  .game-card img {
+    width: 100%;
+    aspect-ratio: 16/10;
+    object-fit: cover;
+    display: block;
+  }
+
+  .game-card .game-name {
+    padding: 8px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #ccc;
+    text-align: center;
+  }
+
+  .game-card .live-badge {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background: var(--live);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+  }
+
+  /* MATCH BOARD */
+  .match-board-wrap {
+    background: var(--bg2);
+    padding: 60px 20px;
+  }
+
+  .match-board-inner { max-width: 1300px; margin: 0 auto; }
+
+  .sport-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sport-tab {
+    background: var(--card);
+    border: 1px solid rgba(255,255,255,0.08);
+    color: var(--muted);
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .sport-tab.active, .sport-tab:hover {
+    background: var(--accent);
+    color: #000;
+    border-color: var(--accent);
+  }
+
+  .match-table {
+    background: var(--card);
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+
+  .match-table-header {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto;
+    background: rgba(0,230,118,0.08);
+    padding: 14px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .match-row {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto;
+    padding: 18px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    align-items: center;
+    transition: background 0.2s;
+    cursor: pointer;
+  }
+
+  .match-row:hover { background: rgba(0,230,118,0.04); }
+  .match-row:last-child { border-bottom: none; }
+
+  .match-info { display: flex; flex-direction: column; gap: 4px; }
+
+  .match-teams {
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+  }
+
+  .match-meta {
+    font-size: 12px;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .live-dot {
+    width: 7px; height: 7px;
+    background: var(--live);
+    border-radius: 50%;
+    animation: pulse 1.5s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  .odds-box {
+    background: var(--bg3);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--accent2);
+    text-align: center;
+    min-width: 60px;
+    margin-left: 10px;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+
+  .odds-box:hover { background: var(--accent2); color: #000; }
+
+  .bet-btn {
+    background: linear-gradient(135deg, var(--accent), #00bfa5);
+    color: #000;
+    padding: 8px 18px;
+    border-radius: 7px;
+    font-weight: 800;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    white-space: nowrap;
+    transition: all 0.2s;
+  }
+
+  .bet-btn:hover { transform: scale(1.05); }
+
+  /* LIVE CASINO */
+  .casino-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+  }
+
+  .casino-card {
+    background: var(--card);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 14px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+  }
+
+  .casino-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(0,0,0,0.5); border-color: var(--accent2); }
+
+  .casino-card img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
+  }
+
+  .casino-card .casino-info {
+    padding: 14px;
+  }
+
+  .casino-card .casino-name {
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 4px;
+  }
+
+  .casino-card .casino-type {
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  .casino-card .play-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .casino-card:hover .play-overlay { opacity: 1; }
+
+  .play-btn {
+    background: var(--accent);
+    color: #000;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 14px;
+  }
+
+  /* HOW TO GET ID */
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+  }
+
+  .step-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px 24px;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s;
+  }
+
+  .step-card:hover { border-color: var(--accent); transform: translateY(-4px); }
+
+  .step-num {
+    width: 52px; height: 52px;
+    background: linear-gradient(135deg, var(--accent), #00bfa5);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    margin: 0 auto 18px;
+  }
+
+  .step-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
+  .step-card p { font-size: 14px; color: #7986cb; line-height: 1.6; }
+
+  /* FEATURES */
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .feature-card {
+    background: var(--card);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 14px;
+    padding: 28px;
+    transition: all 0.3s;
+  }
+
+  .feature-card:hover { border-color: var(--accent); box-shadow: 0 8px 30px rgba(0,230,118,0.1); }
+
+  .feature-icon {
+    font-size: 36px;
+    margin-bottom: 16px;
+    display: block;
+  }
+
+  .feature-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
+  .feature-card p { font-size: 14px; color: #7986cb; line-height: 1.7; }
+
+  /* TRUST BADGES */
+  .trust-bar {
+    background: rgba(0,230,118,0.05);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 20px;
+  }
+
+  .trust-inner {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--accent);
+  }
+
+  /* FAQ */
+  .faq-list { max-width: 800px; margin: 0 auto; }
+
+  .faq-item {
+    background: var(--card);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 12px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+
+  .faq-item:hover { border-color: var(--border); }
+
+  .faq-q {
+    padding: 18px 24px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+  }
+
+  .faq-q .icon { color: var(--accent); font-size: 20px; transition: transform 0.3s; }
+  .faq-item.open .faq-q .icon { transform: rotate(45deg); }
+
+  .faq-a {
+    padding: 0 24px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s;
+    font-size: 14px;
+    color: #7986cb;
+    line-height: 1.7;
+  }
+
+  .faq-item.open .faq-a {
+    max-height: 200px;
+    padding: 0 24px 18px;
+  }
+
+  /* RESPONSIBLE GAMBLING */
+  .responsible {
+    background: linear-gradient(135deg, #0d1f3c, #060b14);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .responsible h2 { font-family: 'Rajdhani', sans-serif; font-size: 32px; font-weight: 700; margin-bottom: 16px; }
+  .responsible p { color: #7986cb; line-height: 1.8; font-size: 15px; }
+
+  /* FOOTER */
+  footer {
+    background: #040810;
+    border-top: 1px solid var(--border);
+    padding: 60px 20px 30px;
+  }
+
+  .footer-inner {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .footer-brand p {
+    color: #5c6bc0;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 16px;
+    max-width: 280px;
+  }
+
+  .footer-col h4 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 16px;
+  }
+
+  .footer-col a {
+    display: block;
+    color: #5c6bc0;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+    transition: color 0.2s;
+  }
+
+  .footer-col a:hover { color: var(--text); }
+
+  .trust-badges {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .trust-badge-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: #7986cb;
+  }
+
+  .trust-badge-item span:first-child { color: var(--accent); }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.05);
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .footer-bottom p { font-size: 13px; color: #37474f; }
+
+  /* FLOATING WA */
+  .wa-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(135deg, #25d366, #128c7e);
+    color: #fff;
+    padding: 14px 22px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 8px 30px rgba(37,211,102,0.4);
+    z-index: 999;
+    animation: bounce 2s infinite;
+    transition: transform 0.2s;
+  }
+
+  .wa-float:hover { transform: scale(1.05); }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+  }
+
+  /* MARQUEE */
+  .ticker {
+    background: rgba(0,230,118,0.08);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 10px 0;
+    overflow: hidden;
+  }
+
+  .ticker-inner {
+    display: flex;
+    gap: 60px;
+    animation: marquee 20s linear infinite;
+    width: max-content;
+  }
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .ticker-item {
+    white-space: nowrap;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .ticker-item .sep { color: var(--accent2); }
+
+  /* ABOUT SECTION */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .about-img {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .about-img img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .about-img::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0,230,118,0.1), transparent);
+    border-radius: 20px;
+  }
+
+  .about-content h2 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+
+  .about-content p {
+    color: #7986cb;
+    line-height: 1.8;
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+
+  .check-list {
+    list-style: none;
+    margin: 24px 0;
+  }
+
+  .check-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text);
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+
+  .check-list li::before {
+    content: '✓';
+    background: var(--accent);
+    color: #000;
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 800;
+    flex-shrink: 0;
+  }
+
+  /* BONUS SECTION */
+  .bonus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+  }
+
+  .bonus-card {
+    background: var(--card);
+    border: 1px solid rgba(255,171,0,0.2);
+    border-radius: 16px;
+    padding: 30px 24px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+
+  .bonus-card:hover { border-color: var(--accent2); transform: translateY(-4px); box-shadow: 0 12px 30px rgba(255,171,0,0.15); }
+
+  .bonus-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent2), #ff6f00);
+  }
+
+  .bonus-pct {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+    color: var(--accent2);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .bonus-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
+  .bonus-card p { font-size: 13px; color: #7986cb; line-height: 1.6; }
+
+  @media (max-width: 900px) {
+    nav { display: none; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .about-grid { grid-template-columns: 1fr; }
+    .about-img { display: none; }
+    .match-table-header, .match-row { grid-template-columns: 1fr auto auto; }
+  }
+
+  @media (max-width: 600px) {
+    .footer-grid { grid-template-columns: 1fr; }
+    .hero-stats { gap: 24px; }
+    .wa-float span.wa-text { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-inner">
+    <span class="ticker-item">🏏 IPL 2025 LIVE BETTING <span class="sep">|</span></span>
+    <span class="ticker-item">⚡ INSTANT ID ACTIVATION <span class="sep">|</span></span>
+    <span class="ticker-item">💰 WELCOME BONUS 100% <span class="sep">|</span></span>
+    <span class="ticker-item">🎰 LIVE CASINO GAMES <span class="sep">|</span></span>
+    <span class="ticker-item">📱 24×7 WHATSAPP SUPPORT <span class="sep">|</span></span>
+    <span class="ticker-item">💸 INSTANT WITHDRAWALS <span class="sep">|</span></span>
+    <span class="ticker-item">🏏 INDIA vs AUSTRALIA LIVE ODDS <span class="sep">|</span></span>
+    <span class="ticker-item">⚡ INSTANT ID ACTIVATION <span class="sep">|</span></span>
+    <span class="ticker-item">💰 WELCOME BONUS 100% <span class="sep">|</span></span>
+    <span class="ticker-item">🎰 LIVE CASINO GAMES <span class="sep">|</span></span>
+    <span class="ticker-item">📱 24×7 WHATSAPP SUPPORT <span class="sep">|</span></span>
+    <span class="ticker-item">💸 INSTANT WITHDRAWALS <span class="sep">|</span></span>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">
+      <div class="logo-icon">🏏</div>
+      <div class="logo-text">ID Cricket <span>Online</span></div>
+    </a>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Get Betting ID</a>
+      <a href="#">Bonuses</a>
+      <a href="#">Live Casino</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </nav>
+    <a href="https://wa.me/" class="btn-wa">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.11 1.524 5.84L0 24l6.336-1.498A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.8a9.8 9.8 0 01-4.994-1.37l-.36-.212-3.757.888.927-3.657-.233-.376A9.776 9.776 0 012.2 12C2.2 6.59 6.59 2.2 12 2.2S21.8 6.59 21.8 12 17.41 21.8 12 21.8z"/></svg>
+      Get Betting ID
+    </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">🏆 India's #1 Cricket Betting Platform</div>
+  <h1>Get Your <span>Cricket Betting ID</span><br>In Just 2 Minutes</h1>
+  <p>Instant ID activation • Live match odds • Premium casino games • 24×7 WhatsApp support • Secure & trusted platform</p>
+  <div class="hero-ctas">
+    <a href="https://wa.me/" class="btn-primary">
+      📱 Get Instant Betting ID
+    </a>
+    <a href="#about" class="btn-outline">
+      🎮 Explore Platform
+    </a>
+  </div>
+  <div class="hero-stats">
+    <div class="stat-box"><div class="num">5L+</div><div class="label">Active Players</div></div>
+    <div class="stat-box"><div class="num">₹50Cr+</div><div class="label">Paid Out</div></div>
+    <div class="stat-box"><div class="num">24×7</div><div class="label">Live Support</div></div>
+    <div class="stat-box"><div class="num">100+</div><div class="label">Games</div></div>
+    <div class="stat-box"><div class="num">2 Min</div><div class="label">ID Activation</div></div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item">✅ 100% Secure Payments</div>
+    <div class="trust-item">⚡ Instant Withdrawals</div>
+    <div class="trust-item">🔒 Advanced Encryption</div>
+    <div class="trust-item">📱 WhatsApp Support</div>
+    <div class="trust-item">🎯 Fair Play Certified</div>
+    <div class="trust-item">18+ Only</div>
+  </div>
+</div>
+
+<!-- POPULAR GAMES -->
+<div class="section" id="games">
+  <div class="section-title">Popular <span>Games</span></div>
+  <div class="divider"></div>
+  <div class="section-sub">50+ exciting games with real-time action and big wins</div>
+  <div class="games-grid">
+    <!-- Games using public domain/free images from picsum or similar -->
+    <div class="game-card" onclick="window.open('https://wa.me/')">
+      <img src="https://images.unsplash.com/photo-1606925797300-0b35e9d1794e?w=260&q=80" alt="Teen Patti">
+      <div class="live-badge">LIVE</div>
+      <div class="game-name">Teen Patti</div>
+    </div>
+    <div class="game-card" onclick="window.open('https://wa.me/')">
+      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=260&q=80" alt="Dragon Tiger">
+      <div class="live-badge">LIVE</div>
+      <div class="game-name">Dragon Tiger</div>
+    </div>
+    <div class="game-card" onclick="window.open('https://wa.me/')">
+      <img src="https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=260&q=80" alt="Roulette">
+      <div class="live-badge">LIVE</div>
+      <div class="game-name">Roulette</div>
+    </div>
+    <div class="game-card" onclick="window.open('https://wa.me/')">
+      <img src="https://images.unsplash.com/photo-1562408590-e32931084e23?w=260&q=80" alt="Baccarat">
+      <div class="game-name">Baccarat</div>
+    </div>
+    <div class="game-card" onclick="window.open('https://wa.me/')">
+      <img src="https://images.unsplash.com/photo-1531927557220-a9e23c1e4794?w=260&q=80" alt="Andar Bahar">
+      <div class="live-badge">LIVE</div>
+      <div class="game-name">Andar Bahar</div>
+    </div>
+    <div class="game-card" onclick="window.open('https://wa.me/')">
+      <img src="https://images.unsplash.com/photo-1609771998399-18d71e94c5c8?w=260&q=80" alt="Blackjack">
+      <div class="game-name">Blackjack</div>
+    </div>
+    <div class="game-card" onclick="window.open('https://wa.me/')">
+      <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=260&q=80" alt="Lucky 7">
+      <div class="game-name">Lucky 7</div>
+    </div>
+    <div class="game-card" onclick="window.open('https://wa.me/')">
+      <img src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=260&q=80" alt="Cricket 2020">
+      <div class="live-badge">LIVE</div>
+      <div class="game-name">Cricket 2020</div>
+    </div>
+    <div class="game-card" onclick="window.open('https://wa.me/')">
+      <img src="https://images.unsplash.com/photo-1516802273409-68526ee1bdd6?w=260&q=80" alt="Poker">
+      <div class="game-name">20-20 Poker</div>
+    </div>
+    <div class="game-card" onclick="window.open('https://wa.me/')">
+      <img src="https://images.unsplash.com/photo-1614850523011-8f49ffc73908?w=260&q=80" alt="Casino War">
+      <div class="game-name">Casino War</div>
+    </div>
+    <div class="game-card" onclick="window.open('https://wa.me/')">
+      <img src="https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=260&q=80" alt="Sic Bo">
+      <div class="game-name">Sic Bo</div>
+    </div>
+    <div class="game-card" onclick="window.open('https://wa.me/')">
+      <img src="https://images.unsplash.com/photo-1606925797300-0b35e9d1794e?w=260&q=80" alt="Worli Matka">
+      <div class="game-name">Worli Matka</div>
+    </div>
+    <div class="game-card" onclick="window.open('https://wa.me/')">
+      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=260&q=80" alt="Marble Race">
+      <div class="live-badge">LIVE</div>
+      <div class="game-name">Marble Race</div>
+    </div>
+    <div class="game-card" onclick="window.open('https://wa.me/')">
+      <img src="https://images.unsplash.com/photo-1562408590-e32931084e23?w=260&q=80" alt="Lottery">
+      <div class="game-name">Lottery</div>
+    </div>
+    <div class="game-card" onclick="window.open('https://wa.me/')">
+      <img src="https://images.unsplash.com/photo-1531927557220-a9e23c1e4794?w=260&q=80" alt="Aviator">
+      <div class="live-badge">HOT</div>
+      <div class="game-name">Aviator</div>
+    </div>
+    <div class="game-card" onclick="window.open('https://wa.me/')">
+      <img src="https://images.unsplash.com/photo-1609771998399-18d71e94c5c8?w=260&q=80" alt="Wingo">
+      <div class="game-name">Wingo</div>
+    </div>
+  </div>
+</div>
+
+<!-- MATCH BOARD -->
+<div class="match-board-wrap">
+  <div class="match-board-inner">
+    <div class="section-title">Live <span>Match Board</span></div>
+    <div class="divider"></div>
+    <div class="sport-tabs">
+      <div class="sport-tab active">🏏 Cricket</div>
+      <div class="sport-tab">⚽ Football</div>
+      <div class="sport-tab">🤼 Kabaddi</div>
+      <div class="sport-tab">🎾 Tennis</div>
+      <div class="sport-tab">🏀 Basketball</div>
+    </div>
+    <div class="match-table">
+      <div class="match-table-header">
+        <span>Match</span>
+        <span>Back</span>
+        <span>Lay</span>
+        <span>Action</span>
+      </div>
+      <div class="match-row">
+        <div class="match-info">
+          <div class="match-teams">India vs Australia</div>
+          <div class="match-meta"><span class="live-dot"></span> Live • 2nd Innings • 28.4 Overs</div>
+        </div>
+        <div class="odds-box">1.82</div>
+        <div class="odds-box">1.85</div>
+        <button class="bet-btn" onclick="window.open('https://wa.me/')">BET NOW</button>
+      </div>
+      <div class="match-row">
+        <div class="match-info">
+          <div class="match-teams">England vs Pakistan</div>
+          <div class="match-meta"><span class="live-dot"></span> Live • 18 Overs • T20I</div>
+        </div>
+        <div class="odds-box">1.91</div>
+        <div class="odds-box">1.94</div>
+        <button class="bet-btn" onclick="window.open('https://wa.me/')">BET NOW</button>
+      </div>
+      <div class="match-row">
+        <div class="match-info">
+          <div class="match-teams">South Africa vs New Zealand</div>
+          <div class="match-meta"><span class="live-dot"></span> Live • 35 Overs • ODI</div>
+        </div>
+        <div class="odds-box">1.88</div>
+        <div class="odds-box">1.90</div>
+        <button class="bet-btn" onclick="window.open('https://wa.me/')">BET NOW</button>
+      </div>
+      <div class="match-row">
+        <div class="match-info">
+          <div class="match-teams">Sri Lanka vs Bangladesh</div>
+          <div class="match-meta"><span class="live-dot"></span> Live • Powerplay • T20</div>
+        </div>
+        <div class="odds-box">1.67</div>
+        <div class="odds-box">1.70</div>
+        <button class="bet-btn" onclick="window.open('https://wa.me/')">BET NOW</button>
+      </div>
+      <div class="match-row">
+        <div class="match-info">
+          <div class="match-teams">West Indies vs Afghanistan</div>
+          <div class="match-meta"><span class="live-dot"></span> Live • Super Over</div>
+        </div>
+        <div class="odds-box">1.95</div>
+        <div class="odds-box">1.98</div>
+        <button class="bet-btn" onclick="window.open('https://wa.me/')">BET NOW</button>
+      </div>
+      <div class="match-row">
+        <div class="match-info">
+          <div class="match-teams">Virtual India vs AUS</div>
+          <div class="match-meta">🎮 Virtual • Every 5 Minutes</div>
+        </div>
+        <div class="odds-box">1.60</div>
+        <div class="odds-box">1.63</div>
+        <button class="bet-btn" onclick="window.open('https://wa.me/')">BET NOW</button>
+      </div>
+      <div class="match-row">
+        <div class="match-info">
+          <div class="match-teams">VIP India vs Pakistan</div>
+          <div class="match-meta">👑 Premium Market • High Odds</div>
+        </div>
+        <div class="odds-box">2.05</div>
+        <div class="odds-box">2.10</div>
+        <button class="bet-btn" onclick="window.open('https://wa.me/')">BET NOW</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- LIVE CASINO -->
+<div class="section">
+  <div class="section-title">Live <span>Casino</span></div>
+  <div class="divider"></div>
+  <div class="section-sub">Real Dealers • Real Wins • Real Time</div>
+  <div class="casino-grid">
+    <div class="casino-card">
+      <img src="https://images.unsplash.com/photo-1606925797300-0b35e9d1794e?w=400&q=80" alt="Teen Patti Live">
+      <div class="play-overlay"><div class="play-btn">▶ Play Now</div></div>
+      <div class="casino-info"><div class="casino-name">Teen Patti Live</div><div class="casino-type">🔴 Live • 847 Players</div></div>
+    </div>
+    <div class="casino-card">
+      <img src="https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=400&q=80" alt="Live Roulette">
+      <div class="play-overlay"><div class="play-btn">▶ Play Now</div></div>
+      <div class="casino-info"><div class="casino-name">Speed Roulette</div><div class="casino-type">🔴 Live • 1.2K Players</div></div>
+    </div>
+    <div class="casino-card">
+      <img src="https://images.unsplash.com/photo-1562408590-e32931084e23?w=400&q=80" alt="Baccarat">
+      <div class="play-overlay"><div class="play-btn">▶ Play Now</div></div>
+      <div class="casino-info"><div class="casino-name">No Commission Baccarat</div><div class="casino-type">🔴 Live • 634 Players</div></div>
+    </div>
+    <div class="casino-card">
+      <img src="https://images.unsplash.com/photo-1609771998399-18d71e94c5c8?w=400&q=80" alt="Blackjack">
+      <div class="play-overlay"><div class="play-btn">▶ Play Now</div></div>
+      <div class="casino-info"><div class="casino-name">Lightning Blackjack</div><div class="casino-type">🔴 Live • 523 Players</div></div>
+    </div>
+    <div class="casino-card">
+      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80" alt="Dragon Tiger">
+      <div class="play-overlay"><div class="play-btn">▶ Play Now</div></div>
+      <div class="casino-info"><div class="casino-name">Dragon Tiger</div><div class="casino-type">🔴 Live • 988 Players</div></div>
+    </div>
+    <div class="casino-card">
+      <img src="https://images.unsplash.com/photo-1531927557220-a9e23c1e4794?w=400&q=80" alt="Andar Bahar">
+      <div class="play-overlay"><div class="play-btn">▶ Play Now</div></div>
+      <div class="casino-info"><div class="casino-name">Andar Bahar</div><div class="casino-type">🔴 Live • 761 Players</div></div>
+    </div>
+    <div class="casino-card">
+      <img src="https://images.unsplash.com/photo-1516802273409-68526ee1bdd6?w=400&q=80" alt="Auto Roulette">
+      <div class="play-overlay"><div class="play-btn">▶ Play Now</div></div>
+      <div class="casino-info"><div class="casino-name">Automatic Roulette</div><div class="casino-type">🔴 Live • 302 Players</div></div>
+    </div>
+    <div class="casino-card">
+      <img src="https://images.unsplash.com/photo-1614850523011-8f49ffc73908?w=400&q=80" alt="Blackjack Classic">
+      <div class="play-overlay"><div class="play-btn">▶ Play Now</div></div>
+      <div class="casino-info"><div class="casino-name">Classic Blackjack</div><div class="casino-type">🔴 Live • 415 Players</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- HOW TO GET ID -->
+<div style="background: var(--bg2); padding: 60px 20px;">
+  <div style="max-width:1300px;margin:0 auto;">
+    <div class="section-title">How to Get Your <span>Betting ID</span></div>
+    <div class="divider"></div>
+    <div class="section-sub">Get started in under 2 minutes — simple, fast, secure</div>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h3>Tap WhatsApp Button</h3>
+        <p>Click the WhatsApp button on any page. Our team is available 24×7 to assist you instantly.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h3>Share Basic Details</h3>
+        <p>Provide your name and basic information. All data is handled with strict privacy and security.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h3>Instant ID Activation</h3>
+        <p>Your Cricket Betting ID is activated within minutes. Completely verified and ready to use.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <h3>Start Betting & Winning</h3>
+        <p>Log in to your premium betting panel and start placing bets on cricket, casino, and more!</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px;">
+      <a href="https://wa.me/" class="btn-primary" style="display:inline-flex;">
+        📱 Get My Betting ID Now
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div class="section" id="about">
+  <div class="about-grid">
+    <div class="about-img">
+      <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=700&q=80" alt="Cricket Stadium">
+    </div>
+    <div class="about-content">
+      <h2>India's Most <span style="color:var(--accent)">Trusted</span> Cricket Betting Platform</h2>
+      <p>ID Cricket Online has quickly emerged as one of India's most reliable and performance-driven platforms in the online cricket betting and fantasy gaming space.</p>
+      <p>Designed with modern technology and a smooth user interface, the platform offers a secure, fast, and user-friendly environment for cricket enthusiasts and gaming lovers across the country.</p>
+      <ul class="check-list">
+        <li>100% Transparent odds with no hidden fees</li>
+        <li>Advanced security & encryption on all transactions</li>
+        <li>Instant deposit & withdrawal processing</li>
+        <li>Live ball-by-ball betting with real-time odds</li>
+        <li>Dedicated 24×7 WhatsApp customer support</li>
+        <li>Fair play certified — operating as a company, not a dealer</li>
+      </ul>
+      <a href="https://wa.me/" class="btn-primary" style="display:inline-flex;margin-top:10px;">
+        📱 Join Now — It's Free
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<div style="background:var(--bg2);padding:60px 20px;">
+  <div style="max-width:1300px;margin:0 auto;">
+    <div class="section-title">Platform <span>Features</span></div>
+    <div class="divider"></div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <span class="feature-icon">⚡</span>
+        <h3>Live Odds Every Second</h3>
+        <p>Real-time odds refreshing on every ball, boundary, and wicket. Zero lag during peak IPL and India vs Pakistan matches.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">💸</span>
+        <h3>Instant Deposits & Withdrawals</h3>
+        <p>Deposits credited instantly. Withdrawals processed fast to your bank account via trusted payment gateways.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🎯</span>
+        <h3>Premium Betting Panel</h3>
+        <p>High-performance panel with ultra-fast loading, smooth navigation, and zero crashes even during peak events.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🎰</span>
+        <h3>Casino & Slot Games</h3>
+        <p>Complete casino experience with Teen Patti, Andar Bahar, Roulette, Blackjack, slots and 100+ other titles.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🛡️</span>
+        <h3>Advanced Anti-Fraud System</h3>
+        <p>Advanced anti-fraud technology and continuous fair-play monitoring protecting all accounts and wallet balances.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">📱</span>
+        <h3>24×7 Real-Time Support</h3>
+        <p>Round-the-clock WhatsApp support for ID activation, betting queries, payment issues, and technical help.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BONUSES -->
+<div class="section">
+  <div class="section-title">Bonuses & <span>Promotions</span></div>
+  <div class="divider"></div>
+  <div class="bonus-grid">
+    <div class="bonus-card">
+      <div class="bonus-pct">100%</div>
+      <h3>Welcome Bonus</h3>
+      <p>Get 100% bonus on your first deposit. Maximum bonus up to ₹10,000 for new users.</p>
+    </div>
+    <div class="bonus-card">
+      <div class="bonus-pct">10%</div>
+      <h3>Daily Cashback</h3>
+      <p>Earn 10% cashback on daily net losses. Credited directly to your wallet every 24 hours.</p>
+    </div>
+    <div class="bonus-card">
+      <div class="bonus-pct">5%</div>
+      <h3>Refer & Earn</h3>
+      <p>Refer a friend and earn 5% of their deposits for life. No limit on referrals.</p>
+    </div>
+    <div class="bonus-card">
+      <div class="bonus-pct">25%</div>
+      <h3>IPL Special Bonus</h3>
+      <p>Extra 25% deposit bonus during IPL season. Limited time offer for all active players.</p>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div style="background:var(--bg2);padding:60px 20px;">
+  <div style="max-width:1300px;margin:0 auto;">
+    <div class="section-title">Frequently Asked <span>Questions</span></div>
+    <div class="divider"></div>
+    <div class="faq-list">
+      <div class="faq-item open">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          What is ID Cricket Online?
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-a">ID Cricket Online is a trusted online betting platform that provides users with a verified cricket betting ID, live sports betting markets, fantasy games, and casino-style gaming options in a secure environment.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          How can I get my ID Cricket Online betting ID?
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-a">You can get your ID Cricket Online ID instantly by clicking the WhatsApp button, sharing basic details, and completing quick verification. Your betting ID is activated within minutes.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          What sports can I bet on?
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-a">You can place bets on cricket, football, tennis, kabaddi, basketball, and other popular sports, along with live casino games and virtual sports.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          How fast are deposits and withdrawals?
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-a">Deposits are credited instantly, and withdrawals are processed quickly through secure payment methods, ensuring a smooth and hassle-free transaction experience.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Are there any bonuses on ID Cricket Online?
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-a">Yes, users can enjoy welcome bonuses, deposit offers, cashback deals, special promotions, and seasonal rewards depending on availability.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Is customer support available 24/7?
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-a">Yes, ID Cricket Online provides 24×7 WhatsApp support to help users with ID creation, betting queries, payments, and technical assistance.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Who can use ID Cricket Online?
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-a">ID Cricket Online is available only for users aged 18 years and above. Players are advised to bet responsibly and within their financial limits.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RESPONSIBLE GAMBLING -->
+<div class="section">
+  <div class="responsible">
+    <div style="font-size:48px;margin-bottom:16px;">🛡️</div>
+    <h2>Play Responsibly</h2>
+    <p style="margin-top:16px;">At ID Cricket Online, we believe betting should always be safe, enjoyable, and fully under your control. Betting should never interfere with your daily responsibilities, financial stability, or mental well-being.</p>
+    <p style="margin-top:12px;">Our platform is strictly for users <strong>18 years and above</strong>. If gambling feels stressful or overwhelming, we strongly recommend taking a break. Bet only what you can afford to lose.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:28px;">
+      <div style="background:rgba(0,230,118,0.1);border:1px solid var(--border);padding:12px 20px;border-radius:8px;font-size:14px;font-weight:600;color:var(--accent);">✅ 18+ Only</div>
+      <div style="background:rgba(0,230,118,0.1);border:1px solid var(--border);padding:12px 20px;border-radius:8px;font-size:14px;font-weight:600;color:var(--accent);">🎯 Fair Play</div>
+      <div style="background:rgba(0,230,118,0.1);border:1px solid var(--border);padding:12px 20px;border-radius:8px;font-size:14px;font-weight:600;color:var(--accent);">🔒 Secure Platform</div>
+      <div style="background:rgba(0,230,118,0.1);border:1px solid var(--border);padding:12px 20px;border-radius:8px;font-size:14px;font-weight:600;color:var(--accent);">💚 Play Safe</div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <div class="logo-icon">🏏</div>
+          <div class="logo-text">ID Cricket <span>Online</span></div>
+        </a>
+        <p>ID Cricket Online is a trusted platform for cricket betting, sports betting, live casino games, and fantasy gaming. Play responsibly and enjoy a secure, fast, and premium betting experience.</p>
+        <a href="https://wa.me/" class="btn-wa" style="display:inline-flex;margin-top:20px;">
+          📱 Get Betting ID on WhatsApp
+        </a>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="#">Home</a>
+        <a href="#">Cricket Betting ID</a>
+        <a href="#">Bonuses</a>
+        <a href="#">Blog</a>
+        <a href="#">FAQs</a>
+      </div>
+      <div class="footer-col">
+        <h4>Important</h4>
+        <a href="#">Responsible Gambling</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Disclaimer</a>
+        <a href="#">Media License</a>
+      </div>
+      <div class="footer-col">
+        <h4>Why Trust Us</h4>
+        <div class="trust-badges">
+          <div class="trust-badge-item"><span>✔</span> 18+ Users Only</div>
+          <div class="trust-badge-item"><span>✔</span> Secure Payments</div>
+          <div class="trust-badge-item"><span>✔</span> Instant Withdrawals</div>
+          <div class="trust-badge-item"><span>✔</span> 24×7 WhatsApp Support</div>
+          <div class="trust-badge-item"><span>✔</span> Advanced Encryption</div>
+          <div class="trust-badge-item"><span>✔</span> Fair Play Certified</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 ID Cricket Online. All Rights Reserved. | Play Responsibly | 18+ Only</p>
+      <p style="color:#37474f;font-size:12px;">Gambling involves financial risk. Please play responsibly.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WA BUTTON -->
+<a href="https://wa.me/" class="wa-float">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.11 1.524 5.84L0 24l6.336-1.498A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.8a9.8 9.8 0 01-4.994-1.37l-.36-.212-3.757.888.927-3.657-.233-.376A9.776 9.776 0 012.2 12C2.2 6.59 6.59 2.2 12 2.2S21.8 6.59 21.8 12 17.41 21.8 12 21.8z"/></svg>
+  <span class="wa-text">Get Betting ID Now</span>
+</a>
+
+<script>
+function toggleFaq(el) {
+  const item = el.closest('.faq-item');
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+// Sport tabs
+document.querySelectorAll('.sport-tab').forEach(tab => {
+  tab.addEventListener('click', function() {
+    document.querySelectorAll('.sport-tab').forEach(t => t.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+
+// Odds flicker (live feel)
+function flickerOdds() {
+  document.querySelectorAll('.odds-box').forEach(box => {
+    if (Math.random() > 0.85) {
+      const base = parseFloat(box.textContent);
+      const delta = (Math.random() - 0.5) * 0.04;
+      box.textContent = (base + delta).toFixed(2);
+      box.style.color = delta > 0 ? '#00e676' : '#ff5252';
+      setTimeout(() => { box.style.color = ''; }, 600);
+    }
+  });
+}
+setInterval(flickerOdds, 2000);
+</script>
+
+</body>
+</html>
