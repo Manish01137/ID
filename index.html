@@ -117,8 +117,8 @@
   }
   .logo-text em { color: var(--gold); font-style: normal; }
 
-  nav { display: flex; gap: 26px; align-items: center; }
-  nav a {
+  nav { display: flex; gap: 6px; align-items: center; }
+  nav > a, .nav-dropdown > .nav-link {
     color: var(--muted);
     text-decoration: none;
     font-size: 13px;
@@ -126,8 +126,117 @@
     letter-spacing: 0.5px;
     text-transform: uppercase;
     transition: color 0.2s;
+    padding: 10px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
   }
-  nav a:hover { color: var(--text); }
+  nav > a:hover, .nav-dropdown:hover > .nav-link { color: var(--text); }
+
+  /* Dropdown */
+  .nav-dropdown { position: relative; }
+  .nav-link .arrow { font-size: 9px; transition: transform 0.25s; }
+  .nav-dropdown:hover .nav-link .arrow { transform: rotate(180deg); }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 240px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: all 0.25s;
+    z-index: 2000;
+    box-shadow: 0 16px 48px rgba(0,0,0,0.5);
+    backdrop-filter: blur(12px);
+  }
+  .nav-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .dropdown-menu a {
+    display: block;
+    padding: 10px 22px;
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+    letter-spacing: 0.3px;
+  }
+  .dropdown-menu a:hover {
+    color: var(--text);
+    background: rgba(230,57,70,0.07);
+    padding-left: 26px;
+  }
+  .dropdown-menu .dd-divider {
+    height: 1px;
+    background: rgba(255,255,255,0.05);
+    margin: 6px 0;
+  }
+  .dropdown-menu .dd-label {
+    padding: 6px 22px 4px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--red);
+  }
+
+  /* GET CRICKET ID button in nav */
+  .btn-cta-nav {
+    background: linear-gradient(135deg, #25d366, #128c7e);
+    color: #fff !important;
+    padding: 10px 22px !important;
+    border-radius: 8px;
+    font-weight: 800 !important;
+    font-size: 12px !important;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.25s;
+    box-shadow: 0 4px 18px rgba(37,211,102,0.25);
+    letter-spacing: 0.5px;
+    margin-left: 10px;
+    white-space: nowrap;
+    animation: ctaPulse 2s ease-in-out infinite;
+  }
+  .btn-cta-nav:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(37,211,102,0.4); }
+  @keyframes ctaPulse {
+    0%,100%{ box-shadow: 0 4px 18px rgba(37,211,102,0.25); }
+    50%{ box-shadow: 0 4px 28px rgba(37,211,102,0.5); }
+  }
+
+  /* Hamburger */
+  .hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 1001;
+  }
+  .hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--text);
+    margin: 5px 0;
+    transition: all 0.3s;
+    border-radius: 2px;
+  }
+  .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+  .hamburger.active span:nth-child(2) { opacity: 0; }
+  .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
 
   .btn-wa {
     background: linear-gradient(135deg, #25d366, #128c7e);
@@ -849,7 +958,57 @@
   }
 
   @media(max-width:960px) {
-    nav { display: none; }
+    .hamburger { display: block; }
+    nav {
+      position: fixed;
+      top: 0; right: -320px;
+      width: 300px;
+      height: 100vh;
+      background: var(--bg);
+      border-left: 1px solid var(--border);
+      flex-direction: column;
+      align-items: stretch;
+      padding: 80px 0 30px;
+      gap: 0;
+      transition: right 0.35s ease;
+      overflow-y: auto;
+      z-index: 999;
+    }
+    nav.open { right: 0; }
+    nav > a, .nav-dropdown > .nav-link {
+      padding: 14px 24px;
+      font-size: 14px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+    .nav-dropdown .dropdown-menu {
+      position: static;
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+      box-shadow: none;
+      border: none;
+      border-radius: 0;
+      background: rgba(255,255,255,0.02);
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+      padding: 0;
+    }
+    .nav-dropdown.open .dropdown-menu {
+      max-height: 600px;
+      padding: 6px 0;
+    }
+    .nav-dropdown .nav-link .arrow { margin-left: auto; }
+    .nav-dropdown.open .nav-link .arrow { transform: rotate(180deg); }
+    .btn-cta-nav { margin: 20px 24px 0; justify-content: center; }
+    .nav-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 998;
+    }
+    .nav-overlay.show { display: block; }
     .footer-grid { grid-template-columns: 1fr 1fr; }
     .about-grid { grid-template-columns: 1fr; }
     .about-visual { display: none; }
@@ -890,18 +1049,66 @@
       <div class="logo-icon">🏏</div>
       <div class="logo-text">ID Cricket <em>Online</em></div>
     </a>
+    <button type="button" class="hamburger" onclick="toggleMobileNav()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-overlay" onclick="toggleMobileNav()"></div>
     <nav>
       <a href="#">Home</a>
-      <a href="#">Get Betting ID</a>
-      <a href="#">Bonuses</a>
-      <a href="#">Live Casino</a>
-      <a href="#">Blog</a>
-      <a href="#">Contact</a>
+
+      <!-- Betting Exchanges Dropdown -->
+      <div class="nav-dropdown">
+        <span class="nav-link" onclick="toggleDropdown(this)">Betting Exchanges <span class="arrow">▾</span></span>
+        <div class="dropdown-menu">
+          <a href="#">Fairbet ID</a>
+          <a href="#">World777 ID</a>
+          <a href="#">Sky Exchange ID</a>
+          <a href="#">TigerExch ID</a>
+          <a href="#">DiamondExch ID</a>
+          <div class="dd-divider"></div>
+          <div class="dd-label">Compare</div>
+          <a href="#">Fairbet vs World777</a>
+        </div>
+      </div>
+
+      <!-- Tournaments Dropdown -->
+      <div class="nav-dropdown">
+        <span class="nav-link" onclick="toggleDropdown(this)">Tournaments <span class="arrow">▾</span></span>
+        <div class="dropdown-menu">
+          <a href="#">IPL 2026 Cricket ID</a>
+          <a href="#">Women's T20 World Cup ID</a>
+          <a href="#">WPL Cricket ID</a>
+          <a href="#">PSL Cricket ID</a>
+        </div>
+      </div>
+
+      <!-- Match Center Dropdown -->
+      <div class="nav-dropdown">
+        <span class="nav-link" onclick="toggleDropdown(this)">Match Center <span class="arrow">▾</span></span>
+        <div class="dropdown-menu">
+          <a href="#">Today's Match Predictions</a>
+          <a href="#">Live Scores & Points Tables</a>
+          <div class="dd-divider"></div>
+          <div class="dd-label">Player Stats</div>
+          <a href="#">Virat Kohli</a>
+          <a href="#">Jasprit Bumrah</a>
+          <a href="#">Smriti Mandhana</a>
+        </div>
+      </div>
+
+      <!-- Offers & Proof Dropdown -->
+      <div class="nav-dropdown">
+        <span class="nav-link" onclick="toggleDropdown(this)">Offers & Proof <span class="arrow">▾</span></span>
+        <div class="dropdown-menu">
+          <a href="#">Bonus Offers</a>
+          <a href="#">Withdrawal Proofs</a>
+          <div class="dd-divider"></div>
+          <a href="#">🎁 Refer 5 Friends = ₹2000 Bonus</a>
+        </div>
+      </div>
+
+      <a href="https://wa.me/" class="btn-cta-nav">📱 GET CRICKET ID</a>
     </nav>
-    <a href="https://wa.me/" class="btn-wa">
-      <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.11 1.524 5.84L0 24l6.336-1.498A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.8a9.8 9.8 0 01-4.994-1.37l-.36-.212-3.757.888.927-3.657-.233-.376A9.776 9.776 0 012.2 12C2.2 6.59 6.59 2.2 12 2.2S21.8 6.59 21.8 12 17.41 21.8 12 21.8z"/></svg>
-      Get Betting ID
-    </a>
   </div>
 </header>
 
@@ -1421,6 +1628,26 @@ function toggleFaq(el) {
   const isOpen = item.classList.contains('open');
   document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
   if (!isOpen) item.classList.add('open');
+}
+
+// Mobile nav toggle
+function toggleMobileNav() {
+  const nav = document.querySelector('nav');
+  const hamburger = document.querySelector('.hamburger');
+  const overlay = document.querySelector('.nav-overlay');
+  nav.classList.toggle('open');
+  hamburger.classList.toggle('active');
+  overlay.classList.toggle('show');
+  document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
+}
+
+// Mobile dropdown toggle
+function toggleDropdown(el) {
+  if (window.innerWidth > 960) return;
+  const dropdown = el.closest('.nav-dropdown');
+  const wasOpen = dropdown.classList.contains('open');
+  document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
+  if (!wasOpen) dropdown.classList.add('open');
 }
 
 document.querySelectorAll('.sport-tab').forEach(tab => {
